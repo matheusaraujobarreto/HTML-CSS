@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+<style>
+    /* Assim: # = id   . = class   : = pseudo-class  :: = pseudo-element   > = 'Filho' de alguem*/
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    a{
+        color: rgb(255, 0, 0);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:visited{
+        color: darkmagenta;
+        font-weight: bold;
+    }
+    a:hover{
+        color: black;
+        text-decoration: underline blue;
+    }
+    a:active{
+        color: yellow;
+    }
+    a::after{
+        content: '[link]';
+        text-decoration: none;
+        font-weight: normal;
+        color: grey;
+    }
+    a::before{
+        content: '[link]';
+        text-decoration: none;
+        font-weight: normal;
+        color: grey;
+    }
+</style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li ><a href="https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-01/d009/imagens/voltar.png" target="_blank">Repositório</a></li>
+        <li><a href="https://www.youtube.com/channel/UCo2wafVSRAs8tW7lyqUDdLw" target="_blank">Canal do YT</a></li>
+        <li><a href="https://www.primevideo.com/-/pt/detail/0SGKIQTPQ3KMS0E2WXWZEB1F7H/ref=atv_dp_season_select_s2?jic=8%7CEgNhbGw%3D" target="_blank">Site novo</a></li>
+    </ul>
+
+
+    
+</body>
+</html>

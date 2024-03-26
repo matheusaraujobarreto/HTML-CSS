@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*# é um id e . é um class*/
+body{
+    background: rgb(230, 236, 146);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(160, 123, 22);
+}
+#principal{
+    text-align: center;
+    background-color:rgb(155, 144, 0);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 5px 2px rgb(141, 132, 94);
+    margin: auto;
+    border-radius: 10px;
+    padding: 25px;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+.basico{
+    color:rgb(3, 205, 255) ;
+}
+.intermediario{
+    color: rgb(0, 110, 255);
+}
+.avançado{
+    color: rgb(0, 47, 255);
+}
