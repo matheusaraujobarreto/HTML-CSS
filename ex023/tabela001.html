@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas simples</title>
+    <style>
+        table{
+            width: 300px;
+            height: 300px;
+            border-collapse:collapse ;
+            text-align: center;
+        }
+        tr.l1{
+            background-color: blue;
+            color: white;
+        }
+        tr.l2{
+            background-color: red;
+            color: white;
+        }
+        tr.l3{
+            background-color: yellow;
+        }
+        tr.l4{
+            background-color: green;
+            color: white;
+        }
+        td{
+            border: solid 0.5px black;
+            padding: 5px;
+            vertical-align: baseline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeira tabela</h1>
+    <!--Como é a estrutura da tabela em HTML
+    Table
+        Table row = linha da tabela
+            Table header = cabeça da tabela
+            Table data = Dados-->
+    <table>
+        <tr class="l1">
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="l2">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="l3">
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="l4">
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+
+</body>
+</html>
