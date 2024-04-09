@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>media queries</title>
     <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/medias.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span class="material-symbols-outlined" id="icone" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="home">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -21,11 +26,29 @@
     </header>
     <main>
         <article>
+            <h2>Testando media queries</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas delectus inventore at deserunt quos veritatis. Est hic quod laboriosam quasi maiores fugiat, nam fuga consequuntur velit animi quaerat at ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, praesentium? Voluptatum debitis quo sapiente ut voluptate sint quae cumque porro aperiam veritatis minus, facere rerum ea reprehenderit. Maxime, nam necessitatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere distinctio, nam illo atque voluptas error voluptatem dolorem adipisci delectus accusamus tempore deleniti recusandae aliquam ad cupiditate repellendus soluta ratione.</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas delectus inventore at deserunt quos veritatis. Est hic quod laboriosam quasi maiores fugiat, nam fuga consequuntur velit animi quaerat at ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, praesentium? Voluptatum debitis quo sapiente ut voluptate sint quae cumque porro aperiam veritatis minus, facere rerum ea reprehenderit. Maxime, nam necessitatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere distinctio, nam illo atque voluptas error voluptatem dolorem adipisci delectus accusamus tempore deleniti recusandae aliquam ad cupiditate repellendus soluta ratione.</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas delectus inventore at deserunt quos veritatis. Est hic quod laboriosam quasi maiores fugiat, nam fuga consequuntur velit animi quaerat at ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, praesentium? Voluptatum debitis quo sapiente ut voluptate sint quae cumque porro aperiam veritatis minus, facere rerum ea reprehenderit. Maxime, nam necessitatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere distinctio, nam illo atque voluptas error voluptatem dolorem adipisci delectus accusamus tempore deleniti recusandae aliquam ad cupiditate repellendus soluta ratione.</p>
             
         </article>
     </main>
+    <script>
+        function clickMenu(){
+            if (home.style.display == 'block'){
+                home.style.display = 'none'
+            }else{
+                home.style.display = 'block'
+            }
+        }
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                icone.style.display = 'none'
+                home.style.display = 'block'
+            }else{
+                icone.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
